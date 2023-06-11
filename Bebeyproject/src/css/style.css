@@ -1,0 +1,172 @@
+/*Keseluruhan Rangka Website*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Membuat Scrolling Page Smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set body margin ke 0*/
+body {
+    margin: 0;
+}
+
+/* Membuat Tampilan Pada Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    padding: 0 2em;
+}
+
+.navbar .class-link ul {
+    display: flex;
+}
+
+.navbar .class-link ul li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.navbar .class-link ul li a {
+    color: #FFFF;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.navbar .icon-brand h1 {
+    color: #FFFF;
+    font-family: sans-serif;
+}
+
+.content .container .col-1 .profile-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .container .col-1 .profile-author .user-name {
+    font-size: 20px;
+    padding-top: .5em;
+    font-family: sans-serif;
+}
+
+.content .container .col-1 .profile-author .user-bio {
+    font-family: sans-serif;
+}
+
+.content .container .col-1 .profile-author .user-image img {
+    margin-top: 2em;
+    border-radius: 100%;
+}
+
+/* Membuat tampilan link-box */
+.content .container .col-2 .link-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .container .col-2 .link-class .ext-link {
+    margin-top: 2em ;
+
+} 
+
+.content .container .col-2 .link-class .ext-link a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000;
+    width: 40em;
+    padding: 1em;
+    text-align: center;
+    font-family: sans-serif;
+    transition: all 1s;
+}
+
+.content .container .col-2 .link-class .ext-link a:hover {
+    color: #FFFF;
+    background: #000;
+    transition: all 1s;
+}
+
+.footer .text {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    opacity: .5;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@keyframes userlanding {
+    0% {transform: translateX(-70em);}
+    100%{transform: translateX(0em);}
+}
+/* Membuat website agar lebih responsif */
+
+/*Mobile Responsive*/
+@media screen and (max-width: 670px) {
+
+
+.navbar .icon-brand h1 {
+    font-size: 17px;
+}
+
+.navbar .class-link {
+    display: none;
+}
+
+/* Membuat tampilan link-box versi responsif */
+
+.content .container .col-2 .link-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .container .col-2 .link-class .ext-link {
+    margin-top: 2em ;
+} 
+
+/* Sesi Animasi Text Box*/
+
+.link-ext-1 {
+    animation-name: userlanding;
+    animation-duration: 1s;
+}
+
+.link-ext-2 {
+    animation-name: userlanding;
+    animation-duration: 1.5s;
+}
+
+.link-ext-3 {
+    animation-name: userlanding;
+    animation-duration: 2s;
+}
+
+.link-ext-4 {
+    animation-name: userlanding;
+    animation-duration: 3s;
+}
+
+.link-ext-5 {
+    animation-name: userlanding;
+    animation-duration: 3.5s;
+}
+
+
+.content .container .col-2 .link-class .ext-link a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000;
+    width: 20em;
+    padding: 1em;
+    text-align: center;
+}
+}
